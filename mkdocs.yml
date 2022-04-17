@@ -1,0 +1,54 @@
+site_name: DevCraft Документации
+repo_url: https://github.com/Gokujo/mhdocs
+site_url: https://readme.devcraft.club
+site_author: Maxim Harder
+site_description: "Сайт с документациями, который построен на Python и системе MKDocs. Исходники всегда будут доступны на GitHub."
+copyright: "Документация защищена лицензией <a href='https://github.com/Gokujo/mhdocs/blob/master/LICENSE.md'>MIT license</a>"
+
+theme:
+    name: material
+    colorscheme: monokai
+    language: ru
+    features:
+        - content.code.annotate
+
+plugins:
+    - search
+    -   minify:
+            minify_html: true
+            minify_js: true
+            minify_css: true
+            htmlmin_opts:
+            remove_comments: true
+
+markdown_extensions:
+    - abbr
+    - attr_list
+    - md_in_html
+    - admonition
+    - pymdownx.details
+    - pymdownx.highlight:
+        linenums: true
+        anchor_linenums: true
+        use_pygments: true
+        auto_title: true
+#    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - tables
+    - footnotes
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - md_in_html
+
+extra:
+    homepage: https://devcraft.club
+
+extra_css:
+  - extras/css/all.min.css
+  - extras/css/styles.css
