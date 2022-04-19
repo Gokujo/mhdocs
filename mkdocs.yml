@@ -7,6 +7,30 @@ site_author: Maxim Harder
 site_description: "Сайт с документациями, который построен на Python и системе MKDocs. Исходники всегда будут доступны на GitHub."
 copyright: "Документация защищена лицензией <a href='https://github.com/Gokujo/mhdocs/blob/master/LICENSE.md'>MIT license</a>"
 
+nav:
+    - Главная: index.md
+    - Бесплатные разработки:
+          - Telegram Posting:
+                - Установка: dev/telegramposting/00_install.md
+                - Версии изменениий: dev/telegramposting/01_changelog.md
+          - MyStatus: dev/mystatus.md
+          - Release Status: dev/releasestatus.md
+          - Schema.Org: dev/schema.md
+          - Пользовательские теги: dev/usertags.md
+          - Webmaster Verification: dev/webmaster-verification.md
+          - XF Lists: dev/xflist.md
+          - XF Select: dev/xfselect.md
+    - Хаки:
+          - Страницы как на КиноПоиске: dev/hook-pages-like-kp.md
+          - Подсчёт символов в короткой новости: dev/hook-shortstory-signs-count.md
+    - Платные разработки:
+          - Шаблон SeasonVar:
+                - Установка: dev/paid-seasonvar/00_install.md
+                - Automatic Related: dev/paid-seasonvar/01_related.md
+                - F.A.Q.: dev/paid-seasonvar/02_faq.md
+          - Курс валют: dev/paid-currencies_rate.md
+          - Последние новости списком: dev/paid-lastnews.md
+
 theme:
     name: material
     colorscheme: monokai

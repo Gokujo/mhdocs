@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Добро пожаловать
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Этот сайт работает на простом HTML, CSS и JS.
 
-## Commands
+Вся информация предоставляется такой, как есть. Если найдутся очепятки и / или неточности, то можно спокойно и самому исправить их, сделав fork и отправить обратно через push-request.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Контактная информация
 
-## Project layout
+Всегда актуальная информация:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* Telegram: [@MaHarder](https://t.me/MaHarder)
+
+Я всегда отвечаю в телеграме, может дольше обычного, но отвечаю.
