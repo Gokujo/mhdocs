@@ -1,5 +1,7 @@
 site_name: DevCraft Документации
 repo_url: https://github.com/Gokujo/mhdocs
+repo_name: Gokujo/mhdocs
+edit_uri: edit/main/docs/
 site_url: https://readme.devcraft.club
 site_author: Maxim Harder
 site_description: "Сайт с документациями, который построен на Python и системе MKDocs. Исходники всегда будут доступны на GitHub."
@@ -11,14 +13,31 @@ theme:
     language: ru
     features:
         - content.code.annotate
+        - navigation.instant
+        - navigation.tracking
+#        - navigation.tabs
+#        - navigation.tabs.sticky
+        - navigation.sections
+        - toc.follow
+        - navigation.top
+    palette:
+        primary: indigo
 
 plugins:
-    - search
-    -   minify:
-            minify_html: true
-            minify_js: true
-            minify_css: true
-            htmlmin_opts:
+    - git-revision-date
+    - git-revision-date-localized:
+        enable_creation_date: true
+    - tags
+    - search:
+          lang:
+            - ru
+            - de
+            - en
+    - minify:
+        minify_html: true
+        minify_js: true
+        minify_css: true
+        htmlmin_opts:
             remove_comments: true
 
 markdown_extensions:
@@ -48,6 +67,11 @@ markdown_extensions:
 
 extra:
     homepage: https://devcraft.club
+    analytics:
+        provider: google
+        property: G-6B531VYCBD
+    version:
+        provider: mike
 
 extra_css:
   - extras/css/all.min.css
