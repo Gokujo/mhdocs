@@ -6,12 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/currencies_rate/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/hook-pages-like-kp/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/lastnews/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/hook-shortstory-signs-count/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -21,7 +21,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/pages-like-kp/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/paid-currencies_rate/</loc>
+         <lastmod>2022-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://readme.devcraft.club/1.0.0/dev/paid-lastnews/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -36,27 +41,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/shortstory-signs-count/</loc>
-         <lastmod>2022-04-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://readme.devcraft.club/1.0.0/dev/usertags/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/seasonvar/00_install/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/webmaster-verification/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/seasonvar/01_related/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/xflist/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://readme.devcraft.club/1.0.0/dev/seasonvar/02_faq/</loc>
+         <loc>https://readme.devcraft.club/1.0.0/dev/xfselect/</loc>
+         <lastmod>2022-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://readme.devcraft.club/1.0.0/dev/paid-seasonvar/00_install/</loc>
+         <lastmod>2022-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://readme.devcraft.club/1.0.0/dev/paid-seasonvar/01_related/</loc>
+         <lastmod>2022-04-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://readme.devcraft.club/1.0.0/dev/paid-seasonvar/02_faq/</loc>
          <lastmod>2022-04-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
