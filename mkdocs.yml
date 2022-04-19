@@ -9,6 +9,9 @@ copyright: "Документация защищена лицензией <a href
 
 nav:
     - Главная: index.md
+    - Пользование сайтом:
+          - Как покупать: site/how-to-buy.md
+          - Тех. Поддержка: site/how-to-ask-for-support.md
     - Бесплатные разработки:
           - Telegram Posting:
                 - Установка: dev/telegramposting/00_install.md
@@ -96,6 +99,11 @@ extra:
         property: G-6B531VYCBD
     version:
         provider: mike
+    generator: false
+    social:
+        - icon: fontawesome/solid/paper-plane
+          link: https://t.me/maharder
+          name: Telegram
 
 extra_css:
   - extras/css/all.min.css
