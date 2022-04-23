@@ -1,0 +1,597 @@
+<!doctype html><html lang=ru class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Сайт с документациями, который построен на Python и системе MKDocs. Исходники всегда будут доступны на GitHub."><meta name=author content="Maxim Harder"><link href=https://readme.devcraft.club/1.0.2/dev/mystatus/ rel=canonical><link rel=icon href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.3.0, mkdocs-material-8.2.9"><title>MyStatus - DevCraft Документации</title><link rel=stylesheet href=../../assets/stylesheets/main.120efc48.min.css><link rel=stylesheet href=../../assets/stylesheets/palette.9647289d.min.css><meta name=theme-color content=#4051b5><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><link rel=stylesheet href=../../extras/css/all.min.css><link rel=stylesheet href=../../extras/css/styles.css><script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6B531VYCBD"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-6B531VYCBD",{page_path:e.pathname})})})</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6B531VYCBD"></script></head> <body dir=ltr data-md-color-scheme data-md-color-primary=indigo data-md-color-accent> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#mystatus- class=md-skip> Перейти к содержанию </a> </div> <div data-md-component=announce> </div> <div data-md-component=outdated hidden> <aside class="md-banner md-banner--warning"> </aside> </div> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул"> <a href=https://devcraft.club title="DevCraft Документации" class="md-header__button md-logo" aria-label="DevCraft Документации" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> DevCraft Документации </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> MyStatus </span> </div> </div> </div> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Поиск placeholder=Поиск autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </label> <nav class=md-search__options aria-label=Поиск> <button type=reset class="md-search__icon md-icon" aria-label=Очистить tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> </nav> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Инициализация поиска </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> <div class=md-header__source> <a href=https://github.com/Gokujo/mhdocs title="Перейти к репозиторию" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> Gokujo/mhdocs </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary" aria-label=Навигация data-md-level=0> <label class=md-nav__title for=__drawer> <a href=https://devcraft.club title="DevCraft Документации" class="md-nav__button md-logo" aria-label="DevCraft Документации" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg> </a> DevCraft Документации </label> <div class=md-nav__source> <a href=https://github.com/Gokujo/mhdocs title="Перейти к репозиторию" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> Gokujo/mhdocs </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. class=md-nav__link> Главная </a> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_2 type=checkbox id=__nav_2> <label class=md-nav__link for=__nav_2> Пользование сайтом <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label="Пользование сайтом" data-md-level=1> <label class=md-nav__title for=__nav_2> <span class="md-nav__icon md-icon"></span> Пользование сайтом </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../site/how-to-buy/ class=md-nav__link> Как покупать </a> </li> <li class=md-nav__item> <a href=../../site/how-to-ask-for-support/ class=md-nav__link> Тех. Поддержка </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_3 type=checkbox id=__nav_3 checked> <label class=md-nav__link for=__nav_3> Бесплатные разработки <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label="Бесплатные разработки" data-md-level=1> <label class=md-nav__title for=__nav_3> <span class="md-nav__icon md-icon"></span> Бесплатные разработки </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_3_1 type=checkbox id=__nav_3_1> <label class=md-nav__link for=__nav_3_1> Telegram Posting <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label="Telegram Posting" data-md-level=2> <label class=md-nav__title for=__nav_3_1> <span class="md-nav__icon md-icon"></span> Telegram Posting </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../telegramposting/00_install/ class=md-nav__link> Установка </a> </li> <li class=md-nav__item> <a href=../telegramposting/01_changelog/ class=md-nav__link> Версии изменениий </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" data-md-toggle=toc type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> MyStatus <span class="md-nav__icon md-icon"></span> </label> <a href=./ class="md-nav__link md-nav__link--active"> MyStatus </a> <nav class="md-nav md-nav--secondary" aria-label="Содержание раздела"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> Содержание раздела </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#_1 class=md-nav__link> Установка </a> </li> <li class=md-nav__item> <a href=#_2 class=md-nav__link> Пример подключения </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> Доп. поля как перекрёстные ссылки </a> </li> <li class=md-nav__item> <a href=#13 class=md-nav__link> Установка на 13.х </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../releasestatus/ class=md-nav__link> Release Status </a> </li> <li class=md-nav__item> <a href=../schema/ class=md-nav__link> Schema.Org </a> </li> <li class=md-nav__item> <a href=../usertags/ class=md-nav__link> Пользовательские теги </a> </li> <li class=md-nav__item> <a href=../webmaster-verification/ class=md-nav__link> Webmaster Verification </a> </li> <li class=md-nav__item> <a href=../xflist/ class=md-nav__link> XF Lists </a> </li> <li class=md-nav__item> <a href=../xfselect/ class=md-nav__link> XF Select </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_4 type=checkbox id=__nav_4> <label class=md-nav__link for=__nav_4> Хаки <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=Хаки data-md-level=1> <label class=md-nav__title for=__nav_4> <span class="md-nav__icon md-icon"></span> Хаки </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../hook-pages-like-kp/ class=md-nav__link> Страницы как на КиноПоиске </a> </li> <li class=md-nav__item> <a href=../hook-shortstory-signs-count/ class=md-nav__link> Подсчёт символов в короткой новости </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_5 type=checkbox id=__nav_5> <label class=md-nav__link for=__nav_5> Платные разработки <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label="Платные разработки" data-md-level=1> <label class=md-nav__title for=__nav_5> <span class="md-nav__icon md-icon"></span> Платные разработки </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_5_1 type=checkbox id=__nav_5_1> <label class=md-nav__link for=__nav_5_1> Шаблон SeasonVar <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label="Шаблон SeasonVar" data-md-level=2> <label class=md-nav__title for=__nav_5_1> <span class="md-nav__icon md-icon"></span> Шаблон SeasonVar </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../paid-seasonvar/00_install/ class=md-nav__link> Установка </a> </li> <li class=md-nav__item> <a href=../paid-seasonvar/01_related/ class=md-nav__link> Automatic Related </a> </li> <li class=md-nav__item> <a href=../paid-seasonvar/02_faq/ class=md-nav__link> F.A.Q. </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../paid-currencies_rate/ class=md-nav__link> Курс валют </a> </li> <li class=md-nav__item> <a href=../paid-lastnews/ class=md-nav__link> Последние новости списком </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Содержание раздела"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> Содержание раздела </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#_1 class=md-nav__link> Установка </a> </li> <li class=md-nav__item> <a href=#_2 class=md-nav__link> Пример подключения </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> Доп. поля как перекрёстные ссылки </a> </li> <li class=md-nav__item> <a href=#13 class=md-nav__link> Установка на 13.х </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <a href=https://github.com/Gokujo/mhdocs/edit/main/docs/dev/mystatus.md title="Редактировать страницу" class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg> </a> <h1 id=mystatus->MyStatus - Статус сериалов</h1> <p><strong>Ссылка на разработку</strong>: <a href=https://devcraft.club/downloads/mystatus.5/ ><i class="fa-thin fa-paperclip"></i> Перейти к разработке</a></p> <p><strong>Версия модификации</strong>: <i class="fa-duotone fa-code-branch"></i> 1.0.2.3</p> <h2 id=_1>Установка</h2> <ul> <li>Залить файлы из папки uploads в корень сайт</li> <li>Запустите файл <strong>install.php</strong> в корне вашего сайта, а затем удалите</li> <li>В шаблонах откройте файл <strong>fullstory.tpl</strong> и пропишите в самом низу файла</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>HTML</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1></a>{include file=&quot;engine/modules/mystatus.php?mysid={myshows}<span class=err>&amp;</span>title={title}<span class=err>&amp;</span>news_id={news-id}&quot;}
+</code></pre></div> </td></tr></table> <p>В нужное место ставим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>HTML</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-1-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-1-1 name=__codelineno-1-1></a><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&quot;status {statuss}&quot;</span><span class=p>&gt;</span>{status}<span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</code></pre></div> </td></tr></table> <ul> <li>Открываем <strong>engine/inc/addnews.php</strong> и ищем</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-2-1>1</a></span>
+<span class=normal><a href=#__codelineno-2-2>2</a></span>
+<span class=normal><a href=#__codelineno-2-3>3</a></span>
+<span class=normal><a href=#__codelineno-2-4>4</a></span>
+<span class=normal><a href=#__codelineno-2-5>5</a></span>
+<span class=normal><a href=#__codelineno-2-6>6</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-2-1 name=__codelineno-2-1></a><span class=x>&lt;div class=&quot;form-group&quot;&gt;</span>
+<a id=__codelineno-2-2 name=__codelineno-2-2></a><span class=x>&lt;label class=&quot;control-label col-md-2&quot;&gt;{$lang[&#39;addnews_cat&#39;]}&lt;/label&gt;</span>
+<a id=__codelineno-2-3 name=__codelineno-2-3></a><span class=x>&lt;div class=&quot;col-md-10&quot;&gt;</span>
+<a id=__codelineno-2-4 name=__codelineno-2-4></a><span class=x>&lt;select data-placeholder=&quot;{$lang[&#39;addnews_cat_sel&#39;]}&quot; name=&quot;category[]&quot; id=&quot;category&quot; onchange=&quot;onCategoryChange(this)&quot; $category_multiple style=&quot;width:100%;max-width:350px;&quot;&gt;{$categories_list}&lt;/select&gt;</span>
+<a id=__codelineno-2-5 name=__codelineno-2-5></a><span class=x>&lt;/div&gt;</span>
+<a id=__codelineno-2-6 name=__codelineno-2-6></a><span class=x>&lt;/div&gt;</span>
+</code></pre></div> </td></tr></table> <p>ниже добавляем</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>HTML</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-3-1>1</a></span>
+<span class=normal><a href=#__codelineno-3-2>2</a></span>
+<span class=normal><a href=#__codelineno-3-3>3</a></span>
+<span class=normal><a href=#__codelineno-3-4>4</a></span>
+<span class=normal><a href=#__codelineno-3-5>5</a></span>
+<span class=normal><a href=#__codelineno-3-6>6</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-3-1 name=__codelineno-3-1></a><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&quot;form-group&quot;</span><span class=p>&gt;</span>
+<a id=__codelineno-3-2 name=__codelineno-3-2></a><span class=p>&lt;</span><span class=nt>label</span> <span class=na>class</span><span class=o>=</span><span class=s>&quot;control-label col-md-2&quot;</span><span class=p>&gt;</span>MyShows ID<span class=p>&lt;/</span><span class=nt>label</span><span class=p>&gt;</span>
+<a id=__codelineno-3-3 name=__codelineno-3-3></a><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&quot;col-md-10&quot;</span><span class=p>&gt;</span>
+<a id=__codelineno-3-4 name=__codelineno-3-4></a><span class=p>&lt;</span><span class=nt>input</span> <span class=na>type</span><span class=o>=</span><span class=s>&quot;text&quot;</span> <span class=na>name</span><span class=o>=</span><span class=s>&quot;myshows&quot;</span> <span class=na>size</span><span class=o>=</span><span class=s>&quot;20&quot;</span> <span class=p>&gt;</span>
+<a id=__codelineno-3-5 name=__codelineno-3-5></a><span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+<a id=__codelineno-3-6 name=__codelineno-3-6></a><span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</code></pre></div> </td></tr></table> <p>находим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-4-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-4-1 name=__codelineno-4-1></a><span class=x>$disable_index = isset( $_POST[&#39;disable_index&#39;] ) ? intval( $_POST[&#39;disable_index&#39;] ) : 0;</span>
+</code></pre></div> </td></tr></table> <p>ниже ставим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-5-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-5-1 name=__codelineno-5-1></a><span class=x>$myshowsid = intval($_POST[&#39;myshows&#39;]);</span>
+</code></pre></div> </td></tr></table> <p>находим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-6-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-6-1 name=__codelineno-6-1></a><span class=x>tags, metatitle</span>
+</code></pre></div> </td></tr></table> <p>после ставим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-7-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-7-1 name=__codelineno-7-1></a><span class=x>, myshowsid</span>
+</code></pre></div> </td></tr></table> <p>находим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-8-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-8-1 name=__codelineno-8-1></a><span class=x>&#39;{$_POST[&#39;tags&#39;]}&#39;, &#39;{$metatags[&#39;title&#39;]}&#39;</span>
+</code></pre></div> </td></tr></table> <p>после ставим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-9-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-9-1 name=__codelineno-9-1></a><span class=x>, &#39;$myshowsid&#39;</span>
+</code></pre></div> </td></tr></table> <ul> <li>Открываем <strong>engine/inc/editnews.php</strong> и ищем</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-10-1>1</a></span>
+<span class=normal><a href=#__codelineno-10-2>2</a></span>
+<span class=normal><a href=#__codelineno-10-3>3</a></span>
+<span class=normal><a href=#__codelineno-10-4>4</a></span>
+<span class=normal><a href=#__codelineno-10-5>5</a></span>
+<span class=normal><a href=#__codelineno-10-6>6</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-10-1 name=__codelineno-10-1></a><span class=x>&lt;div class=&quot;form-group&quot;&gt;</span>
+<a id=__codelineno-10-2 name=__codelineno-10-2></a><span class=x>&lt;label class=&quot;control-label col-md-2&quot;&gt;{$lang[&#39;edit_cat&#39;]}&lt;/label&gt;</span>
+<a id=__codelineno-10-3 name=__codelineno-10-3></a><span class=x>&lt;div class=&quot;col-md-10&quot;&gt;</span>
+<a id=__codelineno-10-4 name=__codelineno-10-4></a><span class=x>&lt;select data-placeholder=&quot;{$lang[&#39;addnews_cat_sel&#39;]}&quot; name=&quot;category[]&quot; id=&quot;category&quot; onchange=&quot;onCategoryChange(this)&quot; {$category_multiple} style=&quot;width:350px;&quot;&gt;{$categories_list}&lt;/select&gt;</span>
+<a id=__codelineno-10-5 name=__codelineno-10-5></a><span class=x>&lt;/div&gt;</span>
+<a id=__codelineno-10-6 name=__codelineno-10-6></a><span class=x>&lt;/div&gt;</span>
+</code></pre></div> </td></tr></table> <p>ниже добавляем</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-11-1>1</a></span>
+<span class=normal><a href=#__codelineno-11-2>2</a></span>
+<span class=normal><a href=#__codelineno-11-3>3</a></span>
+<span class=normal><a href=#__codelineno-11-4>4</a></span>
+<span class=normal><a href=#__codelineno-11-5>5</a></span>
+<span class=normal><a href=#__codelineno-11-6>6</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-11-1 name=__codelineno-11-1></a><span class=x>&lt;div class=&quot;form-group&quot;&gt;</span>
+<a id=__codelineno-11-2 name=__codelineno-11-2></a><span class=x>&lt;label class=&quot;control-label col-md-2&quot;&gt;MyShows ID&lt;/label&gt;</span>
+<a id=__codelineno-11-3 name=__codelineno-11-3></a><span class=x>&lt;div class=&quot;col-md-10&quot;&gt;</span>
+<a id=__codelineno-11-4 name=__codelineno-11-4></a><span class=x>&lt;input type=&quot;text&quot; name=&quot;myshows&quot; size=&quot;20&quot; value=&quot;{$row[&#39;myshowsid&#39;]}&quot;&gt;</span>
+<a id=__codelineno-11-5 name=__codelineno-11-5></a><span class=x>&lt;/div&gt;</span>
+<a id=__codelineno-11-6 name=__codelineno-11-6></a><span class=x>&lt;/div&gt;</span>
+</code></pre></div> </td></tr></table> <p>находим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-12-1>1</a></span>
+<span class=normal><a href=#__codelineno-12-2>2</a></span>
+<span class=normal><a href=#__codelineno-12-3>3</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-12-1 name=__codelineno-12-1></a><span class=x>$disable_index = isset( $_POST[&#39;disable_index&#39;] ) ? intval( $_POST[&#39;disable_index&#39;] ) : 0;</span>
+<a id=__codelineno-12-2 name=__codelineno-12-2></a><span class=x>ниже ставим</span>
+<a id=__codelineno-12-3 name=__codelineno-12-3></a><span class=x>[CODE=php]$myshowsid = intval($_POST[&#39;myshows&#39;]);</span>
+</code></pre></div> </td></tr></table> <p>находим (дважды)</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-13-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-13-1 name=__codelineno-13-1></a><span class=x>metatitle=&#39;{$metatags[&#39;title&#39;]}&#39;</span>
+</code></pre></div> </td></tr></table> <p>после ставим (дважды)</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-14-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-14-1 name=__codelineno-14-1></a><span class=x>, myshowsid=&#39;{$myshowsid}&#39;</span>
+</code></pre></div> </td></tr></table> <ul> <li>Открываем файл <strong>engine/modules/show.full.php</strong> и находим</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-15-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-15-1 name=__codelineno-15-1></a><span class=x>if ($row[&#39;metatitle&#39;]) $metatags[&#39;header_title&#39;] = $row[&#39;metatitle&#39;];</span>
+</code></pre></div> </td></tr></table> <p>Ниже прописываем</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-16-1> 1</a></span>
+<span class=normal><a href=#__codelineno-16-2> 2</a></span>
+<span class=normal><a href=#__codelineno-16-3> 3</a></span>
+<span class=normal><a href=#__codelineno-16-4> 4</a></span>
+<span class=normal><a href=#__codelineno-16-5> 5</a></span>
+<span class=normal><a href=#__codelineno-16-6> 6</a></span>
+<span class=normal><a href=#__codelineno-16-7> 7</a></span>
+<span class=normal><a href=#__codelineno-16-8> 8</a></span>
+<span class=normal><a href=#__codelineno-16-9> 9</a></span>
+<span class=normal><a href=#__codelineno-16-10>10</a></span>
+<span class=normal><a href=#__codelineno-16-11>11</a></span>
+<span class=normal><a href=#__codelineno-16-12>12</a></span>
+<span class=normal><a href=#__codelineno-16-13>13</a></span>
+<span class=normal><a href=#__codelineno-16-14>14</a></span>
+<span class=normal><a href=#__codelineno-16-15>15</a></span>
+<span class=normal><a href=#__codelineno-16-16>16</a></span>
+<span class=normal><a href=#__codelineno-16-17>17</a></span>
+<span class=normal><a href=#__codelineno-16-18>18</a></span>
+<span class=normal><a href=#__codelineno-16-19>19</a></span>
+<span class=normal><a href=#__codelineno-16-20>20</a></span>
+<span class=normal><a href=#__codelineno-16-21>21</a></span>
+<span class=normal><a href=#__codelineno-16-22>22</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-16-1 name=__codelineno-16-1></a><span class=x>include ENGINE_DIR . &quot;/data/mystatus.php&quot;;</span>
+<a id=__codelineno-16-2 name=__codelineno-16-2></a><span class=x>$xfieldsdata = xfieldsdataload( $row[&#39;xfields&#39;] );</span>
+<a id=__codelineno-16-3 name=__codelineno-16-3></a><span class=x>$tpl-&gt;set(&quot;{myshows}&quot;, $row[&#39;myshowsid&#39;]);</span>
+<a id=__codelineno-16-4 name=__codelineno-16-4></a><span class=x>//Определяем статус и выводим его</span>
+<a id=__codelineno-16-5 name=__codelineno-16-5></a><span class=x>$xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] = trim( $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] );</span>
+<a id=__codelineno-16-6 name=__codelineno-16-6></a><span class=x>if($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;canceledended&quot;) {</span>
+<a id=__codelineno-16-7 name=__codelineno-16-7></a><span class=x>$statusname = $mystatus_cfg[&#39;closed&#39;];</span>
+<a id=__codelineno-16-8 name=__codelineno-16-8></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;returningseries&quot;) {</span>
+<a id=__codelineno-16-9 name=__codelineno-16-9></a><span class=x>$statusname = $mystatus_cfg[&#39;onair&#39;];</span>
+<a id=__codelineno-16-10 name=__codelineno-16-10></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;tbdothebubble&quot;) {</span>
+<a id=__codelineno-16-11 name=__codelineno-16-11></a><span class=x>$statusname = $mystatus_cfg[&#39;tbd&#39;];</span>
+<a id=__codelineno-16-12 name=__codelineno-16-12></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;onhiatus&quot;) {</span>
+<a id=__codelineno-16-13 name=__codelineno-16-13></a><span class=x>$statusname = $mystatus_cfg[&#39;pause&#39;];</span>
+<a id=__codelineno-16-14 name=__codelineno-16-14></a><span class=x>} elseif($mystatus_cfg[&#39;pilots&#39;] &amp;&amp; $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;pilotordered&quot;) {</span>
+<a id=__codelineno-16-15 name=__codelineno-16-15></a><span class=x>$statusname = $mystatus_cfg[&#39;pilot&#39;];</span>
+<a id=__codelineno-16-16 name=__codelineno-16-16></a><span class=x>} elseif($mystatus_cfg[&#39;news&#39;] &amp;&amp; $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;newseries&quot;) {</span>
+<a id=__codelineno-16-17 name=__codelineno-16-17></a><span class=x>$statusname = $mystatus_cfg[&#39;new&#39;];</span>
+<a id=__codelineno-16-18 name=__codelineno-16-18></a><span class=x>} else {</span>
+<a id=__codelineno-16-19 name=__codelineno-16-19></a><span class=x>$statusname = $mystatus_cfg[&#39;none&#39;];</span>
+<a id=__codelineno-16-20 name=__codelineno-16-20></a><span class=x>}</span>
+<a id=__codelineno-16-21 name=__codelineno-16-21></a><span class=x>$tpl-&gt;set( &#39;{statuss}&#39;, $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] );</span>
+<a id=__codelineno-16-22 name=__codelineno-16-22></a><span class=x>$tpl-&gt;set( &#39;{status}&#39;, $statusname );</span>
+</code></pre></div> </td></tr></table> <ul> <li>Открываем файл <strong>engine/modules/show.short.php</strong>, <strong>engine/modules/show.custom.php</strong> (если хотим, чтобы статус отображался и короткой новости или в построенной через кастом) и находим 2ой</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-17-1>1</a></span>
+<span class=normal><a href=#__codelineno-17-2>2</a></span>
+<span class=normal><a href=#__codelineno-17-3>3</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-17-1 name=__codelineno-17-1></a><span class=x>$tpl-&gt;compile( &#39;content&#39; );</span>
+<a id=__codelineno-17-2 name=__codelineno-17-2></a><span class=x>}</span>
+<a id=__codelineno-17-3 name=__codelineno-17-3></a><span class=x>if( $user_group[$member_id[&#39;user_group&#39;]][&#39;allow_hide&#39;] ) $tpl-&gt;result[&#39;content&#39;] = str_ireplace( &quot;[hide]&quot;, &quot;&quot;, str_ireplace( &quot;[/hide]&quot;, &quot;&quot;, $tpl-&gt;result[&#39;content&#39;]) );</span>
+</code></pre></div> </td></tr></table> <p>Выше прописываем</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-18-1> 1</a></span>
+<span class=normal><a href=#__codelineno-18-2> 2</a></span>
+<span class=normal><a href=#__codelineno-18-3> 3</a></span>
+<span class=normal><a href=#__codelineno-18-4> 4</a></span>
+<span class=normal><a href=#__codelineno-18-5> 5</a></span>
+<span class=normal><a href=#__codelineno-18-6> 6</a></span>
+<span class=normal><a href=#__codelineno-18-7> 7</a></span>
+<span class=normal><a href=#__codelineno-18-8> 8</a></span>
+<span class=normal><a href=#__codelineno-18-9> 9</a></span>
+<span class=normal><a href=#__codelineno-18-10>10</a></span>
+<span class=normal><a href=#__codelineno-18-11>11</a></span>
+<span class=normal><a href=#__codelineno-18-12>12</a></span>
+<span class=normal><a href=#__codelineno-18-13>13</a></span>
+<span class=normal><a href=#__codelineno-18-14>14</a></span>
+<span class=normal><a href=#__codelineno-18-15>15</a></span>
+<span class=normal><a href=#__codelineno-18-16>16</a></span>
+<span class=normal><a href=#__codelineno-18-17>17</a></span>
+<span class=normal><a href=#__codelineno-18-18>18</a></span>
+<span class=normal><a href=#__codelineno-18-19>19</a></span>
+<span class=normal><a href=#__codelineno-18-20>20</a></span>
+<span class=normal><a href=#__codelineno-18-21>21</a></span>
+<span class=normal><a href=#__codelineno-18-22>22</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-18-1 name=__codelineno-18-1></a><span class=x>include ENGINE_DIR . &quot;/data/mystatus.php&quot;;</span>
+<a id=__codelineno-18-2 name=__codelineno-18-2></a><span class=x>$xfieldsdata = xfieldsdataload( $row[&#39;xfields&#39;] );</span>
+<a id=__codelineno-18-3 name=__codelineno-18-3></a><span class=x>$tpl-&gt;set(&quot;{myshows}&quot;, $row[&#39;myshowsid&#39;]);</span>
+<a id=__codelineno-18-4 name=__codelineno-18-4></a><span class=x>//Определяем статус и выводим его</span>
+<a id=__codelineno-18-5 name=__codelineno-18-5></a><span class=x>$xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] = trim( $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] );</span>
+<a id=__codelineno-18-6 name=__codelineno-18-6></a><span class=x>if($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;canceledended&quot;) {</span>
+<a id=__codelineno-18-7 name=__codelineno-18-7></a><span class=x>$statusname = $mystatus_cfg[&#39;closed&#39;];</span>
+<a id=__codelineno-18-8 name=__codelineno-18-8></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;returningseries&quot;) {</span>
+<a id=__codelineno-18-9 name=__codelineno-18-9></a><span class=x>$statusname = $mystatus_cfg[&#39;onair&#39;];</span>
+<a id=__codelineno-18-10 name=__codelineno-18-10></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;tbdothebubble&quot;) {</span>
+<a id=__codelineno-18-11 name=__codelineno-18-11></a><span class=x>$statusname = $mystatus_cfg[&#39;tbd&#39;];</span>
+<a id=__codelineno-18-12 name=__codelineno-18-12></a><span class=x>} elseif($xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;onhiatus&quot;) {</span>
+<a id=__codelineno-18-13 name=__codelineno-18-13></a><span class=x>$statusname = $mystatus_cfg[&#39;pause&#39;];</span>
+<a id=__codelineno-18-14 name=__codelineno-18-14></a><span class=x>} elseif($mystatus_cfg[&#39;pilots&#39;] &amp;&amp; $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;pilotordered&quot;) {</span>
+<a id=__codelineno-18-15 name=__codelineno-18-15></a><span class=x>$statusname = $mystatus_cfg[&#39;pilot&#39;];</span>
+<a id=__codelineno-18-16 name=__codelineno-18-16></a><span class=x>} elseif($mystatus_cfg[&#39;news&#39;] &amp;&amp; $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] == &quot;newseries&quot;) {</span>
+<a id=__codelineno-18-17 name=__codelineno-18-17></a><span class=x>$statusname = $mystatus_cfg[&#39;new&#39;];</span>
+<a id=__codelineno-18-18 name=__codelineno-18-18></a><span class=x>} else {</span>
+<a id=__codelineno-18-19 name=__codelineno-18-19></a><span class=x>$statusname = $mystatus_cfg[&#39;none&#39;];</span>
+<a id=__codelineno-18-20 name=__codelineno-18-20></a><span class=x>}</span>
+<a id=__codelineno-18-21 name=__codelineno-18-21></a><span class=x>$tpl-&gt;set( &#39;{statuss}&#39;, $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] );</span>
+<a id=__codelineno-18-22 name=__codelineno-18-22></a><span class=x>$tpl-&gt;set( &#39;{status}&#39;, $statusname );</span>
+</code></pre></div> </td></tr></table> <ul> <li>В нужное место в <strong>shortstory.tpl</strong> или в шаблон, что подключён через кастом, ставим</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>HTML</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-19-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-19-1 name=__codelineno-19-1></a><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&quot;status {statuss}&quot;</span><span class=p>&gt;</span>{status}<span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</code></pre></div> </td></tr></table> <ul> <li>Открываем файл со стилями шаблона и в самый низ прописываем это</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>CSS</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-20-1>  1</a></span>
+<span class=normal><a href=#__codelineno-20-2>  2</a></span>
+<span class=normal><a href=#__codelineno-20-3>  3</a></span>
+<span class=normal><a href=#__codelineno-20-4>  4</a></span>
+<span class=normal><a href=#__codelineno-20-5>  5</a></span>
+<span class=normal><a href=#__codelineno-20-6>  6</a></span>
+<span class=normal><a href=#__codelineno-20-7>  7</a></span>
+<span class=normal><a href=#__codelineno-20-8>  8</a></span>
+<span class=normal><a href=#__codelineno-20-9>  9</a></span>
+<span class=normal><a href=#__codelineno-20-10> 10</a></span>
+<span class=normal><a href=#__codelineno-20-11> 11</a></span>
+<span class=normal><a href=#__codelineno-20-12> 12</a></span>
+<span class=normal><a href=#__codelineno-20-13> 13</a></span>
+<span class=normal><a href=#__codelineno-20-14> 14</a></span>
+<span class=normal><a href=#__codelineno-20-15> 15</a></span>
+<span class=normal><a href=#__codelineno-20-16> 16</a></span>
+<span class=normal><a href=#__codelineno-20-17> 17</a></span>
+<span class=normal><a href=#__codelineno-20-18> 18</a></span>
+<span class=normal><a href=#__codelineno-20-19> 19</a></span>
+<span class=normal><a href=#__codelineno-20-20> 20</a></span>
+<span class=normal><a href=#__codelineno-20-21> 21</a></span>
+<span class=normal><a href=#__codelineno-20-22> 22</a></span>
+<span class=normal><a href=#__codelineno-20-23> 23</a></span>
+<span class=normal><a href=#__codelineno-20-24> 24</a></span>
+<span class=normal><a href=#__codelineno-20-25> 25</a></span>
+<span class=normal><a href=#__codelineno-20-26> 26</a></span>
+<span class=normal><a href=#__codelineno-20-27> 27</a></span>
+<span class=normal><a href=#__codelineno-20-28> 28</a></span>
+<span class=normal><a href=#__codelineno-20-29> 29</a></span>
+<span class=normal><a href=#__codelineno-20-30> 30</a></span>
+<span class=normal><a href=#__codelineno-20-31> 31</a></span>
+<span class=normal><a href=#__codelineno-20-32> 32</a></span>
+<span class=normal><a href=#__codelineno-20-33> 33</a></span>
+<span class=normal><a href=#__codelineno-20-34> 34</a></span>
+<span class=normal><a href=#__codelineno-20-35> 35</a></span>
+<span class=normal><a href=#__codelineno-20-36> 36</a></span>
+<span class=normal><a href=#__codelineno-20-37> 37</a></span>
+<span class=normal><a href=#__codelineno-20-38> 38</a></span>
+<span class=normal><a href=#__codelineno-20-39> 39</a></span>
+<span class=normal><a href=#__codelineno-20-40> 40</a></span>
+<span class=normal><a href=#__codelineno-20-41> 41</a></span>
+<span class=normal><a href=#__codelineno-20-42> 42</a></span>
+<span class=normal><a href=#__codelineno-20-43> 43</a></span>
+<span class=normal><a href=#__codelineno-20-44> 44</a></span>
+<span class=normal><a href=#__codelineno-20-45> 45</a></span>
+<span class=normal><a href=#__codelineno-20-46> 46</a></span>
+<span class=normal><a href=#__codelineno-20-47> 47</a></span>
+<span class=normal><a href=#__codelineno-20-48> 48</a></span>
+<span class=normal><a href=#__codelineno-20-49> 49</a></span>
+<span class=normal><a href=#__codelineno-20-50> 50</a></span>
+<span class=normal><a href=#__codelineno-20-51> 51</a></span>
+<span class=normal><a href=#__codelineno-20-52> 52</a></span>
+<span class=normal><a href=#__codelineno-20-53> 53</a></span>
+<span class=normal><a href=#__codelineno-20-54> 54</a></span>
+<span class=normal><a href=#__codelineno-20-55> 55</a></span>
+<span class=normal><a href=#__codelineno-20-56> 56</a></span>
+<span class=normal><a href=#__codelineno-20-57> 57</a></span>
+<span class=normal><a href=#__codelineno-20-58> 58</a></span>
+<span class=normal><a href=#__codelineno-20-59> 59</a></span>
+<span class=normal><a href=#__codelineno-20-60> 60</a></span>
+<span class=normal><a href=#__codelineno-20-61> 61</a></span>
+<span class=normal><a href=#__codelineno-20-62> 62</a></span>
+<span class=normal><a href=#__codelineno-20-63> 63</a></span>
+<span class=normal><a href=#__codelineno-20-64> 64</a></span>
+<span class=normal><a href=#__codelineno-20-65> 65</a></span>
+<span class=normal><a href=#__codelineno-20-66> 66</a></span>
+<span class=normal><a href=#__codelineno-20-67> 67</a></span>
+<span class=normal><a href=#__codelineno-20-68> 68</a></span>
+<span class=normal><a href=#__codelineno-20-69> 69</a></span>
+<span class=normal><a href=#__codelineno-20-70> 70</a></span>
+<span class=normal><a href=#__codelineno-20-71> 71</a></span>
+<span class=normal><a href=#__codelineno-20-72> 72</a></span>
+<span class=normal><a href=#__codelineno-20-73> 73</a></span>
+<span class=normal><a href=#__codelineno-20-74> 74</a></span>
+<span class=normal><a href=#__codelineno-20-75> 75</a></span>
+<span class=normal><a href=#__codelineno-20-76> 76</a></span>
+<span class=normal><a href=#__codelineno-20-77> 77</a></span>
+<span class=normal><a href=#__codelineno-20-78> 78</a></span>
+<span class=normal><a href=#__codelineno-20-79> 79</a></span>
+<span class=normal><a href=#__codelineno-20-80> 80</a></span>
+<span class=normal><a href=#__codelineno-20-81> 81</a></span>
+<span class=normal><a href=#__codelineno-20-82> 82</a></span>
+<span class=normal><a href=#__codelineno-20-83> 83</a></span>
+<span class=normal><a href=#__codelineno-20-84> 84</a></span>
+<span class=normal><a href=#__codelineno-20-85> 85</a></span>
+<span class=normal><a href=#__codelineno-20-86> 86</a></span>
+<span class=normal><a href=#__codelineno-20-87> 87</a></span>
+<span class=normal><a href=#__codelineno-20-88> 88</a></span>
+<span class=normal><a href=#__codelineno-20-89> 89</a></span>
+<span class=normal><a href=#__codelineno-20-90> 90</a></span>
+<span class=normal><a href=#__codelineno-20-91> 91</a></span>
+<span class=normal><a href=#__codelineno-20-92> 92</a></span>
+<span class=normal><a href=#__codelineno-20-93> 93</a></span>
+<span class=normal><a href=#__codelineno-20-94> 94</a></span>
+<span class=normal><a href=#__codelineno-20-95> 95</a></span>
+<span class=normal><a href=#__codelineno-20-96> 96</a></span>
+<span class=normal><a href=#__codelineno-20-97> 97</a></span>
+<span class=normal><a href=#__codelineno-20-98> 98</a></span>
+<span class=normal><a href=#__codelineno-20-99> 99</a></span>
+<span class=normal><a href=#__codelineno-20-100>100</a></span>
+<span class=normal><a href=#__codelineno-20-101>101</a></span>
+<span class=normal><a href=#__codelineno-20-102>102</a></span>
+<span class=normal><a href=#__codelineno-20-103>103</a></span>
+<span class=normal><a href=#__codelineno-20-104>104</a></span>
+<span class=normal><a href=#__codelineno-20-105>105</a></span>
+<span class=normal><a href=#__codelineno-20-106>106</a></span>
+<span class=normal><a href=#__codelineno-20-107>107</a></span>
+<span class=normal><a href=#__codelineno-20-108>108</a></span>
+<span class=normal><a href=#__codelineno-20-109>109</a></span>
+<span class=normal><a href=#__codelineno-20-110>110</a></span>
+<span class=normal><a href=#__codelineno-20-111>111</a></span>
+<span class=normal><a href=#__codelineno-20-112>112</a></span>
+<span class=normal><a href=#__codelineno-20-113>113</a></span>
+<span class=normal><a href=#__codelineno-20-114>114</a></span>
+<span class=normal><a href=#__codelineno-20-115>115</a></span>
+<span class=normal><a href=#__codelineno-20-116>116</a></span>
+<span class=normal><a href=#__codelineno-20-117>117</a></span>
+<span class=normal><a href=#__codelineno-20-118>118</a></span>
+<span class=normal><a href=#__codelineno-20-119>119</a></span>
+<span class=normal><a href=#__codelineno-20-120>120</a></span>
+<span class=normal><a href=#__codelineno-20-121>121</a></span>
+<span class=normal><a href=#__codelineno-20-122>122</a></span>
+<span class=normal><a href=#__codelineno-20-123>123</a></span>
+<span class=normal><a href=#__codelineno-20-124>124</a></span>
+<span class=normal><a href=#__codelineno-20-125>125</a></span>
+<span class=normal><a href=#__codelineno-20-126>126</a></span>
+<span class=normal><a href=#__codelineno-20-127>127</a></span>
+<span class=normal><a href=#__codelineno-20-128>128</a></span>
+<span class=normal><a href=#__codelineno-20-129>129</a></span>
+<span class=normal><a href=#__codelineno-20-130>130</a></span>
+<span class=normal><a href=#__codelineno-20-131>131</a></span>
+<span class=normal><a href=#__codelineno-20-132>132</a></span>
+<span class=normal><a href=#__codelineno-20-133>133</a></span>
+<span class=normal><a href=#__codelineno-20-134>134</a></span>
+<span class=normal><a href=#__codelineno-20-135>135</a></span>
+<span class=normal><a href=#__codelineno-20-136>136</a></span>
+<span class=normal><a href=#__codelineno-20-137>137</a></span>
+<span class=normal><a href=#__codelineno-20-138>138</a></span>
+<span class=normal><a href=#__codelineno-20-139>139</a></span>
+<span class=normal><a href=#__codelineno-20-140>140</a></span>
+<span class=normal><a href=#__codelineno-20-141>141</a></span>
+<span class=normal><a href=#__codelineno-20-142>142</a></span>
+<span class=normal><a href=#__codelineno-20-143>143</a></span>
+<span class=normal><a href=#__codelineno-20-144>144</a></span>
+<span class=normal><a href=#__codelineno-20-145>145</a></span>
+<span class=normal><a href=#__codelineno-20-146>146</a></span>
+<span class=normal><a href=#__codelineno-20-147>147</a></span>
+<span class=normal><a href=#__codelineno-20-148>148</a></span>
+<span class=normal><a href=#__codelineno-20-149>149</a></span>
+<span class=normal><a href=#__codelineno-20-150>150</a></span>
+<span class=normal><a href=#__codelineno-20-151>151</a></span>
+<span class=normal><a href=#__codelineno-20-152>152</a></span>
+<span class=normal><a href=#__codelineno-20-153>153</a></span>
+<span class=normal><a href=#__codelineno-20-154>154</a></span>
+<span class=normal><a href=#__codelineno-20-155>155</a></span>
+<span class=normal><a href=#__codelineno-20-156>156</a></span>
+<span class=normal><a href=#__codelineno-20-157>157</a></span>
+<span class=normal><a href=#__codelineno-20-158>158</a></span>
+<span class=normal><a href=#__codelineno-20-159>159</a></span>
+<span class=normal><a href=#__codelineno-20-160>160</a></span>
+<span class=normal><a href=#__codelineno-20-161>161</a></span>
+<span class=normal><a href=#__codelineno-20-162>162</a></span>
+<span class=normal><a href=#__codelineno-20-163>163</a></span>
+<span class=normal><a href=#__codelineno-20-164>164</a></span>
+<span class=normal><a href=#__codelineno-20-165>165</a></span>
+<span class=normal><a href=#__codelineno-20-166>166</a></span>
+<span class=normal><a href=#__codelineno-20-167>167</a></span>
+<span class=normal><a href=#__codelineno-20-168>168</a></span>
+<span class=normal><a href=#__codelineno-20-169>169</a></span>
+<span class=normal><a href=#__codelineno-20-170>170</a></span>
+<span class=normal><a href=#__codelineno-20-171>171</a></span>
+<span class=normal><a href=#__codelineno-20-172>172</a></span>
+<span class=normal><a href=#__codelineno-20-173>173</a></span>
+<span class=normal><a href=#__codelineno-20-174>174</a></span>
+<span class=normal><a href=#__codelineno-20-175>175</a></span>
+<span class=normal><a href=#__codelineno-20-176>176</a></span>
+<span class=normal><a href=#__codelineno-20-177>177</a></span>
+<span class=normal><a href=#__codelineno-20-178>178</a></span>
+<span class=normal><a href=#__codelineno-20-179>179</a></span>
+<span class=normal><a href=#__codelineno-20-180>180</a></span>
+<span class=normal><a href=#__codelineno-20-181>181</a></span>
+<span class=normal><a href=#__codelineno-20-182>182</a></span>
+<span class=normal><a href=#__codelineno-20-183>183</a></span>
+<span class=normal><a href=#__codelineno-20-184>184</a></span>
+<span class=normal><a href=#__codelineno-20-185>185</a></span>
+<span class=normal><a href=#__codelineno-20-186>186</a></span>
+<span class=normal><a href=#__codelineno-20-187>187</a></span>
+<span class=normal><a href=#__codelineno-20-188>188</a></span>
+<span class=normal><a href=#__codelineno-20-189>189</a></span>
+<span class=normal><a href=#__codelineno-20-190>190</a></span>
+<span class=normal><a href=#__codelineno-20-191>191</a></span>
+<span class=normal><a href=#__codelineno-20-192>192</a></span>
+<span class=normal><a href=#__codelineno-20-193>193</a></span>
+<span class=normal><a href=#__codelineno-20-194>194</a></span>
+<span class=normal><a href=#__codelineno-20-195>195</a></span>
+<span class=normal><a href=#__codelineno-20-196>196</a></span>
+<span class=normal><a href=#__codelineno-20-197>197</a></span>
+<span class=normal><a href=#__codelineno-20-198>198</a></span>
+<span class=normal><a href=#__codelineno-20-199>199</a></span>
+<span class=normal><a href=#__codelineno-20-200>200</a></span>
+<span class=normal><a href=#__codelineno-20-201>201</a></span>
+<span class=normal><a href=#__codelineno-20-202>202</a></span>
+<span class=normal><a href=#__codelineno-20-203>203</a></span>
+<span class=normal><a href=#__codelineno-20-204>204</a></span>
+<span class=normal><a href=#__codelineno-20-205>205</a></span>
+<span class=normal><a href=#__codelineno-20-206>206</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-20-1 name=__codelineno-20-1></a><span class=p>.</span><span class=nc>status</span><span class=o>,</span><span class=w> </span><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>normal</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-2 name=__codelineno-20-2></a><span class=w>    </span><span class=k>float</span><span class=p>:</span><span class=w> </span><span class=kc>right</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-3 name=__codelineno-20-3></a><span class=w>    </span><span class=k>margin-top</span><span class=p>:</span><span class=w> </span><span class=mi>-35</span><span class=kt>px</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-4 name=__codelineno-20-4></a><span class=w>    </span><span class=k>font-style</span><span class=p>:</span><span class=w> </span><span class=kc>normal</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-5 name=__codelineno-20-5></a><span class=w>    </span><span class=k>opacity</span><span class=p>:</span><span class=w> </span><span class=mf>0.6</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-6 name=__codelineno-20-6></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#000</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-7 name=__codelineno-20-7></a><span class=w>    </span><span class=k>transition</span><span class=p>:</span><span class=w> </span><span class=kc>all</span><span class=w> </span><span class=mf>0.3</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-8 name=__codelineno-20-8></a><span class=w>    </span><span class=k>font-weight</span><span class=p>:</span><span class=w> </span><span class=mi>700</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-9 name=__codelineno-20-9></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-10 name=__codelineno-20-10></a>
+<a id=__codelineno-20-11 name=__codelineno-20-11></a><span class=p>.</span><span class=nc>status</span><span class=p>:</span><span class=nd>hover</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-12 name=__codelineno-20-12></a><span class=w>    </span><span class=k>opacity</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-13 name=__codelineno-20-13></a><span class=w>    </span><span class=k>cursor</span><span class=p>:</span><span class=w> </span><span class=kc>pointer</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-14 name=__codelineno-20-14></a><span class=w>    </span><span class=k>animation</span><span class=p>:</span><span class=w> </span><span class=n>shake</span><span class=w> </span><span class=kc>linear</span><span class=w> </span><span class=mf>0.5</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-15 name=__codelineno-20-15></a><span class=w>    </span><span class=k>animation-iteration-count</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-16 name=__codelineno-20-16></a><span class=w>    </span><span class=k>transform-origin</span><span class=p>:</span><span class=w> </span><span class=mi>50</span><span class=kt>%</span><span class=w> </span><span class=mi>0</span><span class=kt>%</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-17 name=__codelineno-20-17></a><span class=w>    </span><span class=kp>-webkit-</span><span class=k>animation</span><span class=p>:</span><span class=w> </span><span class=n>shake</span><span class=w> </span><span class=kc>linear</span><span class=w> </span><span class=mf>0.5</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-18 name=__codelineno-20-18></a><span class=w>    </span><span class=kp>-webkit-</span><span class=k>animation-iteration-count</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-19 name=__codelineno-20-19></a><span class=w>    </span><span class=kp>-webkit-</span><span class=k>transform-origin</span><span class=p>:</span><span class=w> </span><span class=mi>50</span><span class=kt>%</span><span class=w> </span><span class=mi>0</span><span class=kt>%</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-20 name=__codelineno-20-20></a><span class=w>    </span><span class=kp>-moz-</span><span class=k>animation</span><span class=p>:</span><span class=w> </span><span class=n>shake</span><span class=w> </span><span class=kc>linear</span><span class=w> </span><span class=mf>0.5</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-21 name=__codelineno-20-21></a><span class=w>    </span><span class=kp>-moz-</span><span class=k>animation-iteration-count</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-22 name=__codelineno-20-22></a><span class=w>    </span><span class=kp>-moz-</span><span class=k>transform-origin</span><span class=p>:</span><span class=w> </span><span class=mi>50</span><span class=kt>%</span><span class=w> </span><span class=mi>0</span><span class=kt>%</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-23 name=__codelineno-20-23></a><span class=w>    </span><span class=kp>-o-</span><span class=k>animation</span><span class=p>:</span><span class=w> </span><span class=n>shake</span><span class=w> </span><span class=kc>linear</span><span class=w> </span><span class=mf>0.5</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-24 name=__codelineno-20-24></a><span class=w>    </span><span class=kp>-o-</span><span class=k>animation-iteration-count</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-25 name=__codelineno-20-25></a><span class=w>    </span><span class=kp>-o-</span><span class=k>transform-origin</span><span class=p>:</span><span class=w> </span><span class=mi>50</span><span class=kt>%</span><span class=w> </span><span class=mi>0</span><span class=kt>%</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-26 name=__codelineno-20-26></a><span class=w>    </span><span class=kp>-ms-</span><span class=k>animation</span><span class=p>:</span><span class=w> </span><span class=n>shake</span><span class=w> </span><span class=kc>linear</span><span class=w> </span><span class=mf>0.5</span><span class=kt>s</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-27 name=__codelineno-20-27></a><span class=w>    </span><span class=kp>-ms-</span><span class=k>animation-iteration-count</span><span class=p>:</span><span class=w> </span><span class=mi>1</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-28 name=__codelineno-20-28></a><span class=w>    </span><span class=kp>-ms-</span><span class=k>transform-origin</span><span class=p>:</span><span class=w> </span><span class=mi>50</span><span class=kt>%</span><span class=w> </span><span class=mi>0</span><span class=kt>%</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-29 name=__codelineno-20-29></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-30 name=__codelineno-20-30></a>
+<a id=__codelineno-20-31 name=__codelineno-20-31></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>returningseries</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-32 name=__codelineno-20-32></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#ebffdd</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-33 name=__codelineno-20-33></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#5cad21</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#549e1e</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#3d8806</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-34 name=__codelineno-20-34></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-35 name=__codelineno-20-35></a>
+<a id=__codelineno-20-36 name=__codelineno-20-36></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>canceledended</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-37 name=__codelineno-20-37></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#ffd4d4</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-38 name=__codelineno-20-38></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#ff0000</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#bf2727</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#792323</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-39 name=__codelineno-20-39></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-40 name=__codelineno-20-40></a>
+<a id=__codelineno-20-41 name=__codelineno-20-41></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>onhiatus</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-42 name=__codelineno-20-42></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#ffecbf</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-43 name=__codelineno-20-43></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#ffb300</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#cc971a</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#daa321</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-44 name=__codelineno-20-44></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-45 name=__codelineno-20-45></a>
+<a id=__codelineno-20-46 name=__codelineno-20-46></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>tbdonthebubble</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-47 name=__codelineno-20-47></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#e8faff</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-48 name=__codelineno-20-48></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#1bc1ff</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#4ae7ea</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#277890</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-49 name=__codelineno-20-49></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-50 name=__codelineno-20-50></a>
+<a id=__codelineno-20-51 name=__codelineno-20-51></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>pilotordered</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-52 name=__codelineno-20-52></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#e0ebff</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-53 name=__codelineno-20-53></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#0058ff</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#275dc5</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#93aee0</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-54 name=__codelineno-20-54></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-55 name=__codelineno-20-55></a>
+<a id=__codelineno-20-56 name=__codelineno-20-56></a><span class=p>.</span><span class=nc>status</span><span class=p>.</span><span class=nc>newseries</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-57 name=__codelineno-20-57></a><span class=w>    </span><span class=k>color</span><span class=p>:</span><span class=w> </span><span class=mh>#fae2ff</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-58 name=__codelineno-20-58></a><span class=w>    </span><span class=k>text-shadow</span><span class=p>:</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>1</span><span class=kt>px</span><span class=w> </span><span class=kc>black</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>2</span><span class=kt>px</span><span class=w> </span><span class=mh>#d600ff</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>3</span><span class=kt>px</span><span class=w> </span><span class=mh>#89319a</span><span class=p>,</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>0</span><span class=w> </span><span class=mi>4</span><span class=kt>px</span><span class=w> </span><span class=mh>#631a71</span><span class=p>;</span><span class=w></span>
+<a id=__codelineno-20-59 name=__codelineno-20-59></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-60 name=__codelineno-20-60></a>
+<a id=__codelineno-20-61 name=__codelineno-20-61></a><span class=p>@</span><span class=k>keyframes</span><span class=w> </span><span class=nt>shake</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-62 name=__codelineno-20-62></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-63 name=__codelineno-20-63></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-64 name=__codelineno-20-64></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-65 name=__codelineno-20-65></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-66 name=__codelineno-20-66></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-67 name=__codelineno-20-67></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-68 name=__codelineno-20-68></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-69 name=__codelineno-20-69></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-70 name=__codelineno-20-70></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-71 name=__codelineno-20-71></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-72 name=__codelineno-20-72></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-73 name=__codelineno-20-73></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-74 name=__codelineno-20-74></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-75 name=__codelineno-20-75></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-76 name=__codelineno-20-76></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-77 name=__codelineno-20-77></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-78 name=__codelineno-20-78></a><span class=w>        </span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-79 name=__codelineno-20-79></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-80 name=__codelineno-20-80></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-81 name=__codelineno-20-81></a>
+<a id=__codelineno-20-82 name=__codelineno-20-82></a><span class=p>@</span><span class=k>-moz-keyframes</span><span class=w> </span><span class=nt>shake</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-83 name=__codelineno-20-83></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-84 name=__codelineno-20-84></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-85 name=__codelineno-20-85></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-86 name=__codelineno-20-86></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-87 name=__codelineno-20-87></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-88 name=__codelineno-20-88></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-89 name=__codelineno-20-89></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-90 name=__codelineno-20-90></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-91 name=__codelineno-20-91></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-92 name=__codelineno-20-92></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-93 name=__codelineno-20-93></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-94 name=__codelineno-20-94></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-95 name=__codelineno-20-95></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-96 name=__codelineno-20-96></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-97 name=__codelineno-20-97></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-98 name=__codelineno-20-98></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-99 name=__codelineno-20-99></a><span class=w>        </span><span class=kp>-moz-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-100 name=__codelineno-20-100></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-101 name=__codelineno-20-101></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-102 name=__codelineno-20-102></a>
+<a id=__codelineno-20-103 name=__codelineno-20-103></a><span class=p>@</span><span class=k>-webkit-keyframes</span><span class=w> </span><span class=nt>shake</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-104 name=__codelineno-20-104></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-105 name=__codelineno-20-105></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-106 name=__codelineno-20-106></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-107 name=__codelineno-20-107></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-108 name=__codelineno-20-108></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-109 name=__codelineno-20-109></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-110 name=__codelineno-20-110></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-111 name=__codelineno-20-111></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-112 name=__codelineno-20-112></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-113 name=__codelineno-20-113></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-114 name=__codelineno-20-114></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-115 name=__codelineno-20-115></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-116 name=__codelineno-20-116></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-117 name=__codelineno-20-117></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-118 name=__codelineno-20-118></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-119 name=__codelineno-20-119></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-120 name=__codelineno-20-120></a><span class=w>        </span><span class=kp>-webkit-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-121 name=__codelineno-20-121></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-122 name=__codelineno-20-122></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-123 name=__codelineno-20-123></a>
+<a id=__codelineno-20-124 name=__codelineno-20-124></a><span class=p>@</span><span class=k>-o-keyframes</span><span class=w> </span><span class=nt>shake</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-125 name=__codelineno-20-125></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-126 name=__codelineno-20-126></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-127 name=__codelineno-20-127></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-128 name=__codelineno-20-128></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-129 name=__codelineno-20-129></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-130 name=__codelineno-20-130></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-131 name=__codelineno-20-131></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-132 name=__codelineno-20-132></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-133 name=__codelineno-20-133></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-134 name=__codelineno-20-134></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-135 name=__codelineno-20-135></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-136 name=__codelineno-20-136></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-137 name=__codelineno-20-137></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-138 name=__codelineno-20-138></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-139 name=__codelineno-20-139></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-140 name=__codelineno-20-140></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-141 name=__codelineno-20-141></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-142 name=__codelineno-20-142></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-143 name=__codelineno-20-143></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-144 name=__codelineno-20-144></a>
+<a id=__codelineno-20-145 name=__codelineno-20-145></a><span class=p>@</span><span class=k>-ms-keyframes</span><span class=w> </span><span class=nt>shake</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-146 name=__codelineno-20-146></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-147 name=__codelineno-20-147></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-148 name=__codelineno-20-148></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-149 name=__codelineno-20-149></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-150 name=__codelineno-20-150></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-151 name=__codelineno-20-151></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-152 name=__codelineno-20-152></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-153 name=__codelineno-20-153></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-154 name=__codelineno-20-154></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-155 name=__codelineno-20-155></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-156 name=__codelineno-20-156></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-157 name=__codelineno-20-157></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-158 name=__codelineno-20-158></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-159 name=__codelineno-20-159></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-160 name=__codelineno-20-160></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-161 name=__codelineno-20-161></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-162 name=__codelineno-20-162></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-163 name=__codelineno-20-163></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-164 name=__codelineno-20-164></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-165 name=__codelineno-20-165></a>
+<a id=__codelineno-20-166 name=__codelineno-20-166></a><span class=p>@</span><span class=k>-o-keyframes</span><span class=w> </span><span class=nt>animationFrames</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-167 name=__codelineno-20-167></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-168 name=__codelineno-20-168></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-169 name=__codelineno-20-169></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-170 name=__codelineno-20-170></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-171 name=__codelineno-20-171></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-172 name=__codelineno-20-172></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-173 name=__codelineno-20-173></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-174 name=__codelineno-20-174></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-175 name=__codelineno-20-175></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-176 name=__codelineno-20-176></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-177 name=__codelineno-20-177></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-178 name=__codelineno-20-178></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-179 name=__codelineno-20-179></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-180 name=__codelineno-20-180></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-181 name=__codelineno-20-181></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-182 name=__codelineno-20-182></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-183 name=__codelineno-20-183></a><span class=w>        </span><span class=kp>-o-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-184 name=__codelineno-20-184></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-185 name=__codelineno-20-185></a><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-186 name=__codelineno-20-186></a>
+<a id=__codelineno-20-187 name=__codelineno-20-187></a><span class=p>@</span><span class=k>-ms-keyframes</span><span class=w> </span><span class=nt>animationFrames</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-188 name=__codelineno-20-188></a><span class=w>    </span><span class=nt>0</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-189 name=__codelineno-20-189></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-190 name=__codelineno-20-190></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-191 name=__codelineno-20-191></a><span class=w>    </span><span class=nt>20</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-192 name=__codelineno-20-192></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>15</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-193 name=__codelineno-20-193></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-194 name=__codelineno-20-194></a><span class=w>    </span><span class=nt>40</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-195 name=__codelineno-20-195></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-10deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-196 name=__codelineno-20-196></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-197 name=__codelineno-20-197></a><span class=w>    </span><span class=nt>60</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-198 name=__codelineno-20-198></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>5</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-199 name=__codelineno-20-199></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-200 name=__codelineno-20-200></a><span class=w>    </span><span class=nt>80</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-201 name=__codelineno-20-201></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=nv>-5deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-202 name=__codelineno-20-202></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-203 name=__codelineno-20-203></a><span class=w>    </span><span class=nt>100</span><span class=o>%</span><span class=w> </span><span class=p>{</span><span class=w></span>
+<a id=__codelineno-20-204 name=__codelineno-20-204></a><span class=w>        </span><span class=kp>-ms-</span><span class=k>transform</span><span class=p>:</span><span class=w> </span><span class=nb>rotate</span><span class=p>(</span><span class=mi>0</span><span class=kt>deg</span><span class=p>);</span><span class=w></span>
+<a id=__codelineno-20-205 name=__codelineno-20-205></a><span class=w>    </span><span class=p>}</span><span class=w></span>
+<a id=__codelineno-20-206 name=__codelineno-20-206></a><span class=p>}</span><span class=w></span>
+</code></pre></div> </td></tr></table> <ul> <li>Создаём доп. поле <strong>Название поля</strong>, <strong>Описание поля</strong> и <strong>Категория</strong> на своё усмотрение <strong>Тип поля</strong>: Список <strong>Значение по умолчанию</strong>: Для DLE 11 и выше можно сделать так</li> </ul> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>Text Only</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-21-1>1</a></span>
+<span class=normal><a href=#__codelineno-21-2>2</a></span>
+<span class=normal><a href=#__codelineno-21-3>3</a></span>
+<span class=normal><a href=#__codelineno-21-4>4</a></span>
+<span class=normal><a href=#__codelineno-21-5>5</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-21-1 name=__codelineno-21-1></a>returningseries|Снимаетсяnewseries|Новинка
+<a id=__codelineno-21-2 name=__codelineno-21-2></a>pilotordered|Пилотная серия
+<a id=__codelineno-21-3 name=__codelineno-21-3></a>canceledended|Закрыт
+<a id=__codelineno-21-4 name=__codelineno-21-4></a>onhiatus|Приостановлен
+<a id=__codelineno-21-5 name=__codelineno-21-5></a>tbdonthebubble|Под вопросом
+</code></pre></div> </td></tr></table> <p>Для версий ниже поля должны выглядеть так</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>Text Only</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-22-1>1</a></span>
+<span class=normal><a href=#__codelineno-22-2>2</a></span>
+<span class=normal><a href=#__codelineno-22-3>3</a></span>
+<span class=normal><a href=#__codelineno-22-4>4</a></span>
+<span class=normal><a href=#__codelineno-22-5>5</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-22-1 name=__codelineno-22-1></a>returningseriesnewseries
+<a id=__codelineno-22-2 name=__codelineno-22-2></a>pilotordered
+<a id=__codelineno-22-3 name=__codelineno-22-3></a>canceledended
+<a id=__codelineno-22-4 name=__codelineno-22-4></a>onhiatus
+<a id=__codelineno-22-5 name=__codelineno-22-5></a>tbdonthebubble
+</code></pre></div> </td></tr></table> <h2 id=_2>Пример подключения</h2> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>HTML</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-23-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-23-1 name=__codelineno-23-1></a>{include file=&quot;engine/modules/mystatus.php?mysid={myshows}<span class=err>&amp;</span>title={title}<span class=err>&amp;</span>news_id={news-id}&quot;}
+</code></pre></div> </td></tr></table> <ul> <li><strong>mysid</strong> - это поле нужно для выяснения ID с MyShows</li> <li><strong>title</strong> - к этому тегу подключается любая комбинация названия. Желательно иметь такую комбинацию: Русское название English Name (ГОД)</li> <li><strong>news_id</strong> - это определяющее самой новости</li> </ul> <div class="admonition warning"> <p class=admonition-title>Внимание!</p> <p>Не будет работать, если подключать доп. поля в режиме перелинковки. Для этого нужно создавать и/ли определять доп. поля по новой</p> </div> <h2 id=_3>Доп. поля как перекрёстные ссылки</h2> <p>Если у вас подключены доп. поля как перекрёстные ссылки и вы не можете обойтись без них, то делаем следующее</p> <p>Открываем <strong>/engine/modules/show.full.php</strong> и ищем</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-24-1>1</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-24-1 name=__codelineno-24-1></a><span class=x>$tpl-&gt;set( &#39;{statuss}&#39;, $xfieldsdata[$mystatus_cfg[&#39;xfield&#39;]] );</span>
+</code></pre></div> </td></tr></table> <p>и выше или ниже ставим</p> <table class=highlighttable><tr><th colspan=2 class=filename><div class=highlight><span class=filename>PHP</span></div></th></tr><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-25-1>1</a></span>
+<span class=normal><a href=#__codelineno-25-2>2</a></span>
+<span class=normal><a href=#__codelineno-25-3>3</a></span>
+<span class=normal><a href=#__codelineno-25-4>4</a></span>
+<span class=normal><a href=#__codelineno-25-5>5</a></span>
+<span class=normal><a href=#__codelineno-25-6>6</a></span>
+<span class=normal><a href=#__codelineno-25-7>7</a></span></pre></div></td><td class=code><div class=highlight><pre><span></span><code><a id=__codelineno-25-1 name=__codelineno-25-1></a><span class=x>if($xfieldsdata[&#39;НАЗВАНИЕ_ДОП_ПОЛЯ&#39;] != &quot;&quot; || !empty($xfieldsdata[&#39;НАЗВАНИЕ_ДОП_ПОЛЯ&#39;])) {</span>
+<a id=__codelineno-25-2 name=__codelineno-25-2></a><span class=x>    $ОПРЕДЕЛИТЕЛЬНОЕ_НАЗВАНИЕ = $xfieldsdata[&#39;НАЗВАНИЕ_ДОП_ПОЛЯ&#39;]</span>
+<a id=__codelineno-25-3 name=__codelineno-25-3></a><span class=x>} else {</span>
+<a id=__codelineno-25-4 name=__codelineno-25-4></a><span class=x>    $ОПРЕДЕЛИТЕЛЬНОЕ_НАЗВАНИЕ = &quot;&quot;;</span>
+<a id=__codelineno-25-5 name=__codelineno-25-5></a><span class=x>}</span>
+<a id=__codelineno-25-6 name=__codelineno-25-6></a>
+<a id=__codelineno-25-7 name=__codelineno-25-7></a><span class=x>$tpl-&gt;set( &#39;{НАЗВАНИЕ}&#39;, $ОПРЕДЕЛИТЕЛЬНОЕ_НАЗВАНИЕ );</span>
+</code></pre></div> </td></tr></table> <p>После этого в конструкцию подключения добавляем <strong>{НАЗВАНИЕ}</strong></p> <p>Названия все на латинском!</p> <h2 id=13>Установка на 13.х</h2> <p>Для этого достаточно установить архив из папки 13.х, залить файлы и папки engine и templates из папки 12.х в корень сайта и проследовать установке начиная с пункта шаблонов.</p> <hr> <div class=md-source-file> <small> Последнее обновление: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2022</span> <br> Дата создания: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2022</span> </small> </div> </article> </div> </div> <a href=# class="md-top md-icon" data-md-component=top data-md-state=hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> К началу </a> </main> <footer class=md-footer> <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул"> <a href=../telegramposting/01_changelog/ class="md-footer__link md-footer__link--prev" aria-label="Назад: Версии изменениий" rel=prev> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </div> <div class=md-footer__title> <div class=md-ellipsis> <span class=md-footer__direction> Назад </span> Версии изменениий </div> </div> </a> <a href=../releasestatus/ class="md-footer__link md-footer__link--next" aria-label="Вперед: Release Status" rel=next> <div class=md-footer__title> <div class=md-ellipsis> <span class=md-footer__direction> Вперед </span> Release Status </div> </div> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Документация защищена лицензией <a href=https://github.com/Gokujo/mhdocs/blob/master/LICENSE.md>MIT license</a> </div> </div> <div class=md-social> <a href=https://t.me/maharder target=_blank rel=noopener title=Telegram class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg> </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.top"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version.title": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": {"provider": "mike"}}</script> <script src=../../assets/javascripts/bundle.6e54b5cd.min.js></script> </body> </html>
