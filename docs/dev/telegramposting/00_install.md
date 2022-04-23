@@ -65,6 +65,33 @@ $tg_post_type = 'addnews'; #тип добавления, addnews или editnews
 @include DLEPlugins::Check(ENGINE_DIR . '/inc/maharder/telegram/custom_add.php');
 ```
 
+## **Отправка сообщений по крону**
+
+!!! warning "Предупреждение!"
+	Данный файл не обрабатывается системой плагинов, поэтому все правки должны быть сделаны в ручную!
+
+Работу с кроном перенимает штатный файл **cron.php**, что находится в корне сайта. Открываем его и находим значение:
+
+```php
+$allow_cron = 
+```
+
+Если дальше стоит **0**, то меняем его на **1**, в противом случае - пропускаешм шаг.
+
+Далее, ищем 
+
+```php
+} elseif($cronmode == "antivirus") {
+```
+
+**Выше** добавляем:
+
+```php
+elseif($cronmode == "telegram") {
+            include_once (DLEPlugins::Check(ENGINE_DIR . "/ajax/maharder/telegram/cronadd.php"));
+            die ("done");
+```
+
 ## Видео с настройкой
 
 <div class="video-wrapper">
