@@ -56,7 +56,7 @@ API-Key
 
 Переходим в канал / группу и добавляем бота
 
-![image.png](assets/channel_settings_1)![image.png](assets/channel_settings_2)
+![image.png](assets/channel_settings_1.png)![image.png](assets/channel_settings_2.png)
 
 Исходя из вашего решения - выбираем нужную группу пользователей.
 
