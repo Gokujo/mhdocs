@@ -454,4 +454,4 @@ switch ( $do ) {
 ```
 #### AutomaticRelated
 
-[Перейти к установке](01_related.md)
+[Перейти к установке](related.md)

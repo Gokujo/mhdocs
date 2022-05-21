@@ -14,8 +14,9 @@ nav:
           - Тех. Поддержка: site/how-to-ask-for-support.md
     - Бесплатные разработки:
           - Telegram Posting:
-                - Установка: dev/telegramposting/00_install.md
-                - Версии изменениий: dev/telegramposting/01_changelog.md
+                - Установка: dev/telegramposting/install.md
+                - Настройка бота: dev/telegramposting/bot.md
+                - Версии изменениий: dev/telegramposting/changelog.md
           - MyStatus: dev/mystatus.md
           - Release Status: dev/releasestatus.md
           - Schema.Org: dev/schema.md
@@ -28,9 +29,9 @@ nav:
           - Подсчёт символов в короткой новости: dev/hook-shortstory-signs-count.md
     - Платные разработки:
           - Шаблон SeasonVar:
-                - Установка: dev/paid-seasonvar/00_install.md
-                - Automatic Related: dev/paid-seasonvar/01_related.md
-                - F.A.Q.: dev/paid-seasonvar/02_faq.md
+                - Установка: dev/paid-seasonvar/install.md
+                - Automatic Related: dev/paid-seasonvar/related.md
+                - F.A.Q.: dev/paid-seasonvar/faq.md
           - Курс валют: dev/paid-currencies_rate.md
           - Последние новости списком: dev/paid-lastnews.md
 
@@ -66,6 +67,13 @@ plugins:
         minify_css: true
         htmlmin_opts:
             remove_comments: true
+    -   redirects:
+            redirect_maps:
+                'dev/paid-seasonvar/00_install.md': 'dev/paid-seasonvar/install.md'
+                'dev/paid-seasonvar/01_related.md': 'dev/paid-seasonvar/related.md'
+                'dev/paid-seasonvar/02_faq.md': 'dev/paid-seasonvar/faq.md'
+                'dev/telegramposting/00_install.md': 'dev/telegramposting/install.md'
+                'dev/telegramposting/01_changelog.md': 'dev/telegramposting/changelog.md'
 
 markdown_extensions:
     - abbr
