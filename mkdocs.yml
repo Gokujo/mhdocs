@@ -22,6 +22,7 @@ nav:
                     -   Для пользователей:
                             -   Настройка: dev/mhadmin/frontend/manage.md
                     -   Для разработчиков:
+                            -   Генератор модулей: dev/mhadmin/new_module.md
                             -   Back-End:
                                     -   Admin: dev/mhadmin/backend/admin.md
                                     -   Ajax: dev/mhadmin/backend/ajax.md
