@@ -3,7 +3,7 @@
 **Ссылка на
 разработку**: [<i class="fa-thin fa-paperclip"></i> Перейти к разработке](https://devcraft.club/downloads/maharder-assets.4/)
 
-**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 2.0.4
+**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 2.0.5
 
 ## **Установка / Обновление**
 

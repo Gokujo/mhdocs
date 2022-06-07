@@ -15,6 +15,8 @@ nav:
     -   Бесплатные разработки:
             -   Telegram Posting:
                     -   Установка: dev/telegramposting/install.md
+                    -   Подключение в сторонние разработки: dev/telegramposting/custom_add.md
+                    -   Теги для оформления шаблонов: dev/telegramposting/template_tags.md
                     -   Настройка бота: dev/telegramposting/bot.md
                     -   Версии изменений: dev/telegramposting/changelog.md
             -   MH Admin:
