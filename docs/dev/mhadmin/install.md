@@ -3,7 +3,7 @@
 **Ссылка на
 разработку**: [<i class="fa-thin fa-paperclip"></i> Перейти к разработке](https://devcraft.club/downloads/maharder-assets.4/)
 
-**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 2.0.5
+**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 2.0.6
 
 ## **Установка / Обновление**
 
@@ -157,3 +157,10 @@ MHAdmin
 | LogGenerator    | Trait | Вспомогательный класс для логирования ошибок                                       | [LogGenerator](./backend/loggenerator.md)   | engine/inc/maharder/_includes/trait/LogGenerator.php  |
 | Model           | Class     | Класс для управления таблицы объекта                                               | [Model](./backend/model.md)                 | engine/inc/maharder/_includes/classes/Model.php       |
 | Table               | Class     | Класс для управления таблицы и её миграции                                                | [Table](./backend/table.md)                 | engine/inc/maharder/_includes/classes/Table.php           |
+
+
+## Видео с настройкой
+
+<div class="video-wrapper">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/_L6RyVXaXW4" frameborder="0" allowfullscreen></iframe>
+</div>

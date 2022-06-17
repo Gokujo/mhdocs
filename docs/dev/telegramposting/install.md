@@ -2,7 +2,7 @@
 
 **Ссылка на разработку**: [<i class="fa-thin fa-paperclip"></i> Перейти к разработке](https://devcraft.club/downloads/telegram-posting.11/)
 
-**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 1.6.8
+**Версия модификации**: <i class="fa-duotone fa-code-branch"></i> 1.7.0
 
 ## **Установка / Обновление**
 
@@ -69,5 +69,5 @@ elseif($cronmode == "telegram") {
 ## Видео с настройкой
 
 <div class="video-wrapper">
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/XZ-EqmK4VTw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/BRclGvgccKw" frameborder="0" allowfullscreen></iframe>
 </div>
